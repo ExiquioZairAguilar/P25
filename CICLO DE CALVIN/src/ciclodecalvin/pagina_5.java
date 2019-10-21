@@ -19,6 +19,8 @@ public class pagina_5 extends javax.swing.JFrame {
     public pagina_5() {
         initComponents();
         this.getContentPane().setBackground(Color.DARK_GRAY);
+        this.setDefaultCloseOperation(Pagina_inicial.DO_NOTHING_ON_CLOSE);
+
     }
 
     /**
@@ -31,23 +33,27 @@ public class pagina_5 extends javax.swing.JFrame {
     private void initComponents() {
 
         jScrollPane1 = new javax.swing.JScrollPane();
-        jTextArea1 = new javax.swing.JTextArea();
-        jButton1 = new javax.swing.JButton();
+        txaalumnos = new javax.swing.JTextArea();
+        btnatras = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setTitle("Nombres de los integrantes");
+        setResizable(false);
 
-        jTextArea1.setEditable(false);
-        jTextArea1.setBackground(new java.awt.Color(0, 204, 153));
-        jTextArea1.setColumns(20);
-        jTextArea1.setRows(5);
-        jTextArea1.setText("\nAlan Rafael Alcala Rodriguez\n\nExiquio Zair Aguilar\n\nYair Mateo Alvarez");
-        jScrollPane1.setViewportView(jTextArea1);
+        txaalumnos.setEditable(false);
+        txaalumnos.setBackground(new java.awt.Color(0, 204, 153));
+        txaalumnos.setColumns(20);
+        txaalumnos.setLineWrap(true);
+        txaalumnos.setRows(5);
+        txaalumnos.setText("\nAlan Rafael Alcala Rodriguez\n\nExiquio Zair Aguilar\n\nYair Mateo Alvarez");
+        txaalumnos.setWrapStyleWord(true);
+        jScrollPane1.setViewportView(txaalumnos);
 
-        jButton1.setBackground(new java.awt.Color(51, 204, 255));
-        jButton1.setText("ATRAS");
-        jButton1.addActionListener(new java.awt.event.ActionListener() {
+        btnatras.setBackground(new java.awt.Color(51, 204, 255));
+        btnatras.setText("ATRAS");
+        btnatras.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton1ActionPerformed(evt);
+                btnatrasActionPerformed(evt);
             }
         });
 
@@ -56,30 +62,34 @@ public class pagina_5 extends javax.swing.JFrame {
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
-                .addGap(75, 75, 75)
-                .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 266, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(59, Short.MAX_VALUE))
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addComponent(jButton1)
-                .addContainerGap())
+                .addContainerGap(25, Short.MAX_VALUE)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+                        .addComponent(btnatras)
+                        .addContainerGap())
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+                        .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 266, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(21, 21, 21))))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
-                .addGap(40, 40, 40)
+                .addContainerGap(32, Short.MAX_VALUE)
                 .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 165, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 53, Short.MAX_VALUE)
-                .addComponent(jButton1)
+                .addGap(26, 26, 26)
+                .addComponent(btnatras)
                 .addGap(19, 19, 19))
         );
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
-    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
+    private void btnatrasActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnatrasActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jButton1ActionPerformed
+
+        dispose();
+
+    }//GEN-LAST:event_btnatrasActionPerformed
 
     /**
      * @param args the command line arguments
@@ -117,8 +127,8 @@ public class pagina_5 extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton jButton1;
+    private javax.swing.JButton btnatras;
     private javax.swing.JScrollPane jScrollPane1;
-    private javax.swing.JTextArea jTextArea1;
+    private javax.swing.JTextArea txaalumnos;
     // End of variables declaration//GEN-END:variables
 }

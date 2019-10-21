@@ -4,7 +4,9 @@
  * and open the template in the editor.
  */
 package ciclodecalvin;
+
 import java.awt.Color;
+
 /**
  *
  * @author 18PROGB0448
@@ -17,6 +19,8 @@ public class pagina_3 extends javax.swing.JFrame {
     public pagina_3() {
         initComponents();
         this.getContentPane().setBackground(Color.DARK_GRAY);
+        this.setDefaultCloseOperation(Pagina_inicial.DO_NOTHING_ON_CLOSE);
+
     }
 
     /**
@@ -29,49 +33,63 @@ public class pagina_3 extends javax.swing.JFrame {
     private void initComponents() {
 
         jScrollPane1 = new javax.swing.JScrollPane();
-        jTextArea1 = new javax.swing.JTextArea();
-        jButton1 = new javax.swing.JButton();
+        txaconclusion = new javax.swing.JTextArea();
+        btnatras = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setTitle("Ciclo de Calvin");
+        setResizable(false);
 
-        jTextArea1.setEditable(false);
-        jTextArea1.setBackground(new java.awt.Color(153, 153, 255));
-        jTextArea1.setColumns(20);
-        jTextArea1.setLineWrap(true);
-        jTextArea1.setRows(5);
-        jTextArea1.setText("CONCLUSION:Eciclo de calvin se trata \nsobre como el dioxido de carbono es capturado \npor reacciones y fue reconocido por ese nombre por el que lo descubri que se llamaba Melvin Calvin y gracias a su decubrimiento. \n");
-        jTextArea1.setWrapStyleWord(true);
-        jScrollPane1.setViewportView(jTextArea1);
+        txaconclusion.setEditable(false);
+        txaconclusion.setBackground(new java.awt.Color(153, 153, 255));
+        txaconclusion.setColumns(20);
+        txaconclusion.setLineWrap(true);
+        txaconclusion.setRows(5);
+        txaconclusion.setText("CONCLUSION:Eciclo de calvin se trata \nsobre como el dioxido de carbono es capturado \npor reacciones y fue reconocido por ese nombre por el que lo descubri que se llamaba Melvin Calvin y gracias a su decubrimiento. \n");
+        txaconclusion.setWrapStyleWord(true);
+        jScrollPane1.setViewportView(txaconclusion);
 
-        jButton1.setBackground(new java.awt.Color(51, 204, 255));
-        jButton1.setText("ATRAS");
+        btnatras.setBackground(new java.awt.Color(51, 204, 255));
+        btnatras.setText("ATRAS");
+        btnatras.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnatrasActionPerformed(evt);
+            }
+        });
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                    .addGroup(layout.createSequentialGroup()
-                        .addContainerGap()
-                        .addComponent(jScrollPane1, javax.swing.GroupLayout.DEFAULT_SIZE, 381, Short.MAX_VALUE))
-                    .addGroup(layout.createSequentialGroup()
-                        .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addComponent(jButton1)))
+                .addContainerGap()
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(jScrollPane1, javax.swing.GroupLayout.DEFAULT_SIZE, 381, Short.MAX_VALUE)
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+                        .addGap(0, 0, Short.MAX_VALUE)
+                        .addComponent(btnatras)
+                        .addGap(8, 8, 8)))
                 .addContainerGap())
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
                 .addContainerGap()
-                .addComponent(jScrollPane1, javax.swing.GroupLayout.DEFAULT_SIZE, 226, Short.MAX_VALUE)
-                .addGap(31, 31, 31)
-                .addComponent(jButton1)
-                .addContainerGap())
+                .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 119, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(39, 39, 39)
+                .addComponent(btnatras)
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
+
+    private void btnatrasActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnatrasActionPerformed
+        // TODO add your handling code here:
+
+        dispose();
+
+    }//GEN-LAST:event_btnatrasActionPerformed
 
     /**
      * @param args the command line arguments
@@ -109,8 +127,8 @@ public class pagina_3 extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton jButton1;
+    private javax.swing.JButton btnatras;
     private javax.swing.JScrollPane jScrollPane1;
-    private javax.swing.JTextArea jTextArea1;
+    private javax.swing.JTextArea txaconclusion;
     // End of variables declaration//GEN-END:variables
 }

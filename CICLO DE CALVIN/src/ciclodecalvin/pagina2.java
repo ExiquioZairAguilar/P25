@@ -17,6 +17,7 @@ public class pagina2 extends javax.swing.JFrame {
     public pagina2() {
         initComponents();
         this.getContentPane().setBackground(Color.DARK_GRAY);
+        this.setDefaultCloseOperation(Pagina_inicial.DO_NOTHING_ON_CLOSE);
     }
 
     /**
@@ -29,47 +30,62 @@ public class pagina2 extends javax.swing.JFrame {
     private void initComponents() {
 
         jScrollPane1 = new javax.swing.JScrollPane();
-        jTextArea1 = new javax.swing.JTextArea();
-        jButton1 = new javax.swing.JButton();
+        txainformacion = new javax.swing.JTextArea();
+        btnatras = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setTitle("Ciclo de Calvin");
+        setResizable(false);
 
-        jTextArea1.setEditable(false);
-        jTextArea1.setBackground(new java.awt.Color(204, 255, 255));
-        jTextArea1.setColumns(20);
-        jTextArea1.setRows(5);
-        jTextArea1.setText("Las plantas usan la energía del Sol en diminutas\nfábricas de energía llamadas cloroplastos. Usando \nla clorofila en el proceso de la fotosíntesis,\nconvierten la energía del Sol en una forma almacen\nable, en moléculas de azúcar ordenadas como la\nglucosa. De esta manera, el dióxido de carbono\ndel aire y el agua del suelo que están en un\nestado más desordenado, se combinan para formar \nmoléculas más ordenadas de azúcar.\nEl dióxido de carbono es capturado en un ciclo de \nreacciones conocido como ciclo de Calvin, o ciclo \nde Calvin-Benson en honor a sus descubridores.\nTambién se conoce como simplemente ciclo.\nLas plantas que utilizan sólo el ciclo de Calvin\npara la fijación del carbono, se conocen como \nplantas. El dióxido de carbono se difunda en \nel estroma de los cloroplastos y se combina con\nun azúcar de cinco carbonos, la ribulosa-1,5-\nb\nifosfato. La enzima que cataliza esta reacción se\nconoce como RuBisCo, una gran molécula \nque puede ser la molécula orgánica más abundante\nen la Tierra. Esta reacción catalizada produce\nun intermedio de 6 carbonos, que se descompone\ncasi de inmediato para formar dos moléculas del\ncompuesto de 3 carbonos el ácido 3-fosfoglicérico. El hecho de que esta molécula de 3 \ncarbonos sea el primer producto estable de la\n fotosíntesis, lleva a la práctica de llamar a\n esto el cicllolo.");
-        jScrollPane1.setViewportView(jTextArea1);
+        txainformacion.setEditable(false);
+        txainformacion.setBackground(new java.awt.Color(204, 255, 255));
+        txainformacion.setColumns(20);
+        txainformacion.setLineWrap(true);
+        txainformacion.setRows(5);
+        txainformacion.setText("\nLas plantas usan la energía del Sol en diminutas fábricas de energía llamadas cloroplastos. Usando la clorofila en el proceso de la fotosíntesis, convierten la energía del Sol en una forma almacen able, en moléculas de azúcar ordenadas como la glucosa. De esta manera, el dióxido de carbono del aire y el agua del suelo que están en un estado más desordenado, se combinan para formar moléculas más ordenadas de azúcar.\n\nEl dióxido de carbono es capturado en un ciclo de reacciones conocido como ciclo de Calvin, o ciclo de Calvin-Benson en honor a sus descubridores. \n\nTambién se conoce como simplemente ciclo. Las plantas que utilizan sólo el ciclo de Calvin para la fijación del carbono, se conocen como plantas. El dióxido de carbono se difunda en \nel estroma de los cloroplastos y se combina con un azúcar de cinco carbonos, la ribulosa-1,5-bifosfato.\n\nLa enzima que cataliza esta reacción se conoce como RuBisCo, una gran molécula que puede ser la molécula orgánica más abundante\nen la Tierra. Esta reacción catalizada produce un intermedio de 6 carbonos, que se descompone casi de inmediato para formar dos moléculas del compuesto de 3 carbonos el ácido 3-fosfoglicérico. \nEl hecho de que esta molécula de 3 carbonos sea el primer producto estable de la  fotosíntesis, lleva a la práctica de llamar a  esto el ciclolo.");
+        txainformacion.setWrapStyleWord(true);
+        jScrollPane1.setViewportView(txainformacion);
 
-        jButton1.setBackground(new java.awt.Color(51, 204, 255));
-        jButton1.setText("ATRAS");
+        btnatras.setBackground(new java.awt.Color(51, 204, 255));
+        btnatras.setText("ATRAS");
+        btnatras.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnatrasActionPerformed(evt);
+            }
+        });
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
+                .addContainerGap()
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(layout.createSequentialGroup()
-                        .addGap(368, 368, 368)
-                        .addComponent(jButton1))
-                    .addGroup(layout.createSequentialGroup()
-                        .addContainerGap()
-                        .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 409, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                    .addComponent(jScrollPane1, javax.swing.GroupLayout.DEFAULT_SIZE, 523, Short.MAX_VALUE)
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+                        .addGap(0, 0, Short.MAX_VALUE)
+                        .addComponent(btnatras)))
+                .addContainerGap())
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
-                .addGap(7, 7, 7)
-                .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 248, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addComponent(jButton1)
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 519, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(63, 63, 63)
+                .addComponent(btnatras)
                 .addContainerGap())
         );
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
+
+    private void btnatrasActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnatrasActionPerformed
+        // TODO add your handling code here:
+   
+         dispose ();
+
+    }//GEN-LAST:event_btnatrasActionPerformed
 
     /**
      * @param args the command line arguments
@@ -107,8 +123,8 @@ public class pagina2 extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton jButton1;
+    private javax.swing.JButton btnatras;
     private javax.swing.JScrollPane jScrollPane1;
-    private javax.swing.JTextArea jTextArea1;
+    private javax.swing.JTextArea txainformacion;
     // End of variables declaration//GEN-END:variables
 }
