@@ -37,22 +37,25 @@ public class pagina_1 extends javax.swing.JFrame {
         txamelvincalvin = new javax.swing.JTextArea();
         btnATRAS = new javax.swing.JButton();
         jLabel1 = new javax.swing.JLabel();
+        jScrollPane2 = new javax.swing.JScrollPane();
+        jTextArea1 = new javax.swing.JTextArea();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
-        setTitle("Ciclo de Calvin");
+        setTitle("¿Que es el Ciclo de Calvin?");
         setResizable(false);
 
         txamelvincalvin.setEditable(false);
         txamelvincalvin.setBackground(new java.awt.Color(204, 255, 255));
         txamelvincalvin.setColumns(20);
+        txamelvincalvin.setFont(new java.awt.Font("Monospaced", 1, 14)); // NOI18N
         txamelvincalvin.setLineWrap(true);
         txamelvincalvin.setRows(5);
-        txamelvincalvin.setText("MELVIN CALVIN\n\nFué un quimico y catedrático estadounidense galardonado con el premio nobel de quimica en 1961\npor su trabajo de asimilacion de el dioxido de carbono en las plantas.\n\nEl 8 de octubre de 1911 se descubrio este ciclo. En este ciclo es comun entre las plantas,aunque algunas existan con mecanismos de fijacion de carbono.por via de regla,todo el carbono existente por la biosfera\ny pasa por el ciclo de calvin.El ocurre en el cloropasto y comprende 13 reacciones de catalizadores  por 11 enzimas diferentes. ");
+        txamelvincalvin.setText("MELVIN CALVIN\n\nFué un quimico y catedrático estadounidense galardonado con el premio nobel de quimica en 1961\npor su trabajo de asimilacion de el dioxido de carbono en las plantas.\n\nEl 8 de octubre de 1911 se descubrio este ciclo. En este ciclo es comun entre las plantas,aunque algunas existan con mecanismos de fijacion de carbono.por via de regla,todo el carbono existente por la biosfera\ny pasa por el ciclo de calvin.El ocurre en el cloropasto y comprende 13 reacciones de catalizadores  por 11 enzimas diferentes. \n");
         txamelvincalvin.setWrapStyleWord(true);
         jScrollPane1.setViewportView(txamelvincalvin);
 
         btnATRAS.setBackground(new java.awt.Color(0, 204, 204));
-        btnATRAS.setText("ATRAS");
+        btnATRAS.setText("ATRÁS");
         btnATRAS.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnATRASActionPerformed(evt);
@@ -62,33 +65,46 @@ public class pagina_1 extends javax.swing.JFrame {
         jLabel1.setMaximumSize(new java.awt.Dimension(400, 300));
         jLabel1.setMinimumSize(new java.awt.Dimension(400, 300));
 
+        jTextArea1.setEditable(false);
+        jTextArea1.setBackground(new java.awt.Color(204, 255, 255));
+        jTextArea1.setColumns(20);
+        jTextArea1.setFont(new java.awt.Font("Monospaced", 1, 14)); // NOI18N
+        jTextArea1.setLineWrap(true);
+        jTextArea1.setRows(5);
+        jTextArea1.setText("Las Tres Etapas Del Ciclo De Calvin.\n\n1.Fijación del carbono. Una molécula de CO2 se combina con una molécula aceptora de cinco carbonos, ribulosa-1,5-bifosfato (RuBP). Este paso produce un compuesto de seis carbonos que se divide para formar dos moléculas de un compuesto de tres carbonos, ácido 3-fosfoglicérico (3-PGA). Esta reacción es catalizada por la enzima RuBP carboxilasa/oxigenasa o RUBisCO. [Detalles de este paso]\nLa primera etapa del ciclo de Calvin incorpora carbono del CO2 en una molécula orgánica, un proceso llamado fijación de carbono.En las plantas, el CO2 de la atmósfera entra en la capa mesófila de las hojas a través de los poros de la superficie de las mismas llamados estomas. Luego, puede difundirse en las células del mesófilo y en el estroma de los cloroplastos, donde ocurre el ciclo de Calvin.\nEsquema simplificado (que muestra los átomos de carbono pero no las estructuras moleculares completas) que ilustra la reacción catalizada por la RUBisCO. La RUBisCO fija una molécula de dióxido de carbono a una molécula de RuBP y entonces, el intermediario de seis carbonos producido se descompone en dos moléculas de 3-fosfoglicerato (3-PGA).\nEsquema simplificado (que muestra los átomos de carbono pero no las estructuras moleculares completas) que ilustra la reacción catalizada por la RUBisCO. La RUBisCO fija una molécula de dióxido de carbono a una molécula de RuBP y entonces, el intermediario de seis carbonos producido se descompone en dos moléculas de 3-fosfoglicerato (3-PGA).\nEn el primer paso del ciclo, una enzima apodada RUBisCO (RuBP carboxilasa-oxigenasa) cataliza la fijación de CO2 a un azúcar de cinco carbonos llamada bifosfato de ribulosa (RuBP). Sin embargo, la molécula de 6 carbonos resultante es inestable y rápidamente se divide en dos moléculas de un compuesto de tres carbonos llamado 3-fosfoglicerato (3-PGA). Así, por cada CO2 que entra en el ciclo, se producen dos moléculas de 3-PGA.\nLas verdaderas estructuras moleculares se muestran a continuación:\nDiagrama que muestra las estrucutras moleculares de RuBP y dióxido de carbono, el compuesto intermediario inestable de seis carbonos que se forma cuando estos se combinan, y las dos moléculas de 3-PGA que se producen cuando el compuesto intermediario se descompone.\nDiagrama que muestra las estrucutras moleculares de RuBP y dióxido de carbono, el compuesto intermediario inestable de seis carbonos que se forma cuando estos se combinan, y las dos moléculas de 3-PGA que se producen cuando el compuesto intermediario se descompone.\n\n2.Reducción. En la segunda etapa, el ATP y NADPH se utilizan para convertir las moléculas de 3-PGA en moléculas de azúcar de tres carbonos, gliceraldehído-3-fosfato (G3P). Esta etapa se llama así, porque NADPH debe donar sus electrones o reducir a un intermediario de tres carbonos para formar el G3P. [Detalles de este paso]\nLa etapa de reducción del ciclo de Calvin, que necesita ATP y NADPH, convierte el 3-PGA (de la fase de fijación) en un azúcar de tres carbonos. Este proceso ocurre en dos pasos principales:\nEsquema simplificado de la etapa de reducción del ciclo de Calvin que muestra los átomos de carbono pero no las estructuras moleculares completas. Primero, una molécula de 3-PGA recibe un segundo grupo fosfato del ATP (lo cual genera ADP). Luego, la molécula con doble fosforilación recibe electrones de la NADPH y se reduce para formar gliceraldehído-3-fosfato. Esta reacción genera NADP+ y también libera un fosfato inorgánico.\nEsquema simplificado de la etapa de reducción del ciclo de Calvin que muestra los átomos de carbono pero no las estructuras moleculares completas. Primero, una molécula de 3-PGA recibe un segundo grupo fosfato del ATP (lo cual genera ADP). Luego, la molécula con doble fosforilación recibe electrones de la NADPH y se reduce para formar gliceraldehído-3-fosfato. Esta reacción genera NADP+ y también libera un fosfato inorgánico.\nEn primer lugar, cada molécula de 3-PGA recibe un grupo fosfato del ATP y se convierte en una molécula con doble fosforilación llamada 1,3-bisfosfoglicerato (y deja al ADP como subproducto).\nEn segundo lugar, las moléculas de 1,3-bisfosfoglicerato se reducen (ganan electrones). Cada molécula recibe dos electrones de la NADPH y pierde uno de sus grupos fosfato para convertirse en un azúcar de tres carbonos llamada gliceraldehído 3-fosfato (G3P). Este paso produce NADP y fosfato  como subproductos.\nLas verdaderas estructuras químicas y reacciones son:\nReacciones de la etapa de reducción del ciclo de Calvin que muestran las estructuras moleculares de los compuestos involucrados.\nReacciones de la etapa de reducción del ciclo de Calvin que muestran las estructuras moleculares de los compuestos involucrados.\nEl ATP y el NADPH utilizados en estos pasos son productos de las reacciones dependientes de la luz (la primera etapa de la fotosíntesis). Es decir, la energía química del ATP y el poder reductor de la NADPH, que se generan con la energía de la luz, mantienen en funcionamiento el ciclo de Calvin. De manera recíproca, el ciclo de Calvin regenera el ADP y el NADP, lo cual proporciona los substratos necesarios para las reacciones dependientes de la luz.\n\n3.Regeneración. Algunas moléculas de G3P se van para formar glucosa, mientras que otras deben reciclarse para regenerar el aceptor RuBP. La regeneración necesita ATP e implica una compleja serie de reacciones, que a mi profesor de biología de la preparatoria le gustaba llamar “secuencia desordenada de carbohidratos”. ");
+        jTextArea1.setWrapStyleWord(true);
+        jScrollPane2.setViewportView(jTextArea1);
+
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                        .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 320, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                        .addComponent(btnATRAS)
-                        .addContainerGap())))
+                .addContainerGap(586, Short.MAX_VALUE)
+                .addComponent(btnATRAS)
+                .addContainerGap())
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 320, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(26, 26, 26)
+                .addComponent(jScrollPane2)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                .addContainerGap(30, Short.MAX_VALUE)
-                .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 336, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(18, 18, 18)
+                .addGap(23, 23, 23)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                    .addComponent(jScrollPane1, javax.swing.GroupLayout.DEFAULT_SIZE, 336, Short.MAX_VALUE)
+                    .addComponent(jScrollPane2))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addComponent(btnATRAS)
                 .addGap(25, 25, 25))
             .addGroup(layout.createSequentialGroup()
                 .addGap(56, 56, 56)
                 .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 328, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addContainerGap(48, Short.MAX_VALUE))
         );
 
         pack();
@@ -139,6 +155,8 @@ public class pagina_1 extends javax.swing.JFrame {
     private javax.swing.JColorChooser jColorChooser1;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JScrollPane jScrollPane1;
+    private javax.swing.JScrollPane jScrollPane2;
+    private javax.swing.JTextArea jTextArea1;
     private javax.swing.JTextArea txamelvincalvin;
     // End of variables declaration//GEN-END:variables
 }

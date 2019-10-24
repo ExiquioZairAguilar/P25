@@ -37,7 +37,7 @@ public class pagina_3 extends javax.swing.JFrame {
         btnatras = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
-        setTitle("Ciclo de Calvin");
+        setTitle("Conclusiòn");
         setResizable(false);
 
         txaconclusion.setEditable(false);
@@ -45,12 +45,12 @@ public class pagina_3 extends javax.swing.JFrame {
         txaconclusion.setColumns(20);
         txaconclusion.setLineWrap(true);
         txaconclusion.setRows(5);
-        txaconclusion.setText("CONCLUSION:Eciclo de calvin se trata \nsobre como el dioxido de carbono es capturado \npor reacciones y fue reconocido por ese nombre por el que lo descubri que se llamaba Melvin Calvin y gracias a su decubrimiento. \n");
+        txaconclusion.setText("CONCLUSION\n\nEl ciclo de calvin se trata \nsobre como el dioxido de carbono es capturado por reacciones y fue reconocido por ese nombre por el que lo descubri que se llamaba Melvin Calvin y gracias a su decubrimiento. \n\nSe necesitan tres vueltas del ciclo de Calvin para crear una molécula de G3P que pueda salir del ciclo para formar glucosa. Resumamos las cantidades de moléculas clave que entran y salen del ciclo de Calvin a medida que se crea una molécula de G3P neta. En tres vueltas del ciclo de Calvin");
         txaconclusion.setWrapStyleWord(true);
         jScrollPane1.setViewportView(txaconclusion);
 
         btnatras.setBackground(new java.awt.Color(51, 204, 255));
-        btnatras.setText("ATRAS");
+        btnatras.setText("ATRÁS");
         btnatras.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnatrasActionPerformed(evt);
@@ -67,18 +67,17 @@ public class pagina_3 extends javax.swing.JFrame {
                     .addComponent(jScrollPane1, javax.swing.GroupLayout.DEFAULT_SIZE, 381, Short.MAX_VALUE)
                     .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
                         .addGap(0, 0, Short.MAX_VALUE)
-                        .addComponent(btnatras)
-                        .addGap(8, 8, 8)))
+                        .addComponent(btnatras)))
                 .addContainerGap())
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
                 .addContainerGap()
-                .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 119, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(39, 39, 39)
+                .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 209, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 17, Short.MAX_VALUE)
                 .addComponent(btnatras)
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addContainerGap())
         );
 
         pack();

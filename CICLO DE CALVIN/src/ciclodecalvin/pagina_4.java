@@ -37,11 +37,11 @@ public class pagina_4 extends javax.swing.JFrame {
         btnatras = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
-        setTitle("Ciclo de Calvin");
+        setTitle("Referencias");
         setResizable(false);
 
         txamasinformacion.setEditable(false);
-        txamasinformacion.setBackground(new java.awt.Color(255, 153, 153));
+        txamasinformacion.setBackground(new java.awt.Color(204, 255, 255));
         txamasinformacion.setColumns(20);
         txamasinformacion.setFont(new java.awt.Font("Monospaced", 1, 13)); // NOI18N
         txamasinformacion.setLineWrap(true);
@@ -51,7 +51,7 @@ public class pagina_4 extends javax.swing.JFrame {
         jScrollPane1.setViewportView(txamasinformacion);
 
         btnatras.setBackground(new java.awt.Color(0, 204, 204));
-        btnatras.setText("ATRAS");
+        btnatras.setText("ATRÁS");
         btnatras.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnatrasActionPerformed(evt);

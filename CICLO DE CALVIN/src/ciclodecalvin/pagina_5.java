@@ -37,7 +37,7 @@ public class pagina_5 extends javax.swing.JFrame {
         btnatras = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
-        setTitle("Nombres de los integrantes");
+        setTitle("Integrantes del Proyecto");
         setResizable(false);
 
         txaalumnos.setEditable(false);
@@ -50,7 +50,7 @@ public class pagina_5 extends javax.swing.JFrame {
         jScrollPane1.setViewportView(txaalumnos);
 
         btnatras.setBackground(new java.awt.Color(51, 204, 255));
-        btnatras.setText("ATRAS");
+        btnatras.setText("ATRÁS");
         btnatras.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnatrasActionPerformed(evt);
